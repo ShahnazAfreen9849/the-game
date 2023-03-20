@@ -1,23 +1,22 @@
-.h1{
+.h1 {
     border-style: square;
     border-color: blue;
     font-display: center;
-    
-    }
 
-    body{
-        background-color:blue;
-    }
+}
 
-.hide{
+body {
+    background-color: aquamarine;
+}
+
+.hide {
     display: none;
 }
 
-.start_btn{
+.start_btn {
     position: absolute;
-    top:  50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
 }
-
