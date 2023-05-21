@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css"></link>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    </link>
     <title>Code Quiz</title>
 </head>
-<body>
-    
-    <section>
-        <h1>Coding Challenge Quiz</h1>
-        <div class="start_btn"> <button id="startBtn">Start Quiz</button></div>
-        <div class="start_btn"> <button id="startBtn">Pause Quiz</button></div>
-        <div class="start_btn"> <button id="startBtn">Continue Quiz</button></div>
 
-    </section>
+<body>
+    <!-- Start Quiz Button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <!-- Info Box -->
     <div class="info_box">
         <div class="info_title">
-            <span>Some Rules of this Quiz</span>
+            <span>Some rules of this Quiz</span>
         </div>
-        <div class="info_list"></div>
-        <div class="info">1.You have 60 sec  to complete quiz. </div>
-        <div class="info">2.Out of 3 questions, 2 correct answers can make you win.</div>
-        <div class="info">3. Save scores by entering initials in the provided box.</div>
+        <div class="info_list">
+            <div class="info">1.You will have only 15 seconds per each question. </div>
+            <div class="info">2.Once you select your answer, it can't be undone.</div>
+            <div class="info">3.You can't select any option once time goes off.</div>
+            <div class="info">4.You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5.You'll get points on the basis of your correct answers. </div>
+        </div>
+
+        <!-- <div> -->
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue Quiz</button>
+        </div>
     </div>
- 
-    
-    <section>
-        <h1>Question 1</h1>
-        <h2> What is the fullform of HTML?</h2>
-        <button>1. Cascading Style Sheets </button>
-        <button>2. Casting Style Sheets</button>
-        <button>3. Cascading Stylish Sheets </button>
-        <button>4. Cascading Style Shopper </button>
-    </section>
-    <section>
-        <h1>Question 2</h1>
-        <h2> What is the fullform of CSS?</h2>
-        <button>1. HyperText Mark Language </button>
-        <button>2. Hyper Markup Language</button>
-        <button>3. HyperText Markup Language </button>
-        <button>4. HyperText Markup Lang </button>
-    </section>
-    <section>
-        <h1>Question 3</h1>
-        <h2> What is JQuery?</h2>
-        <button>1. Java Library </button>
-        <button>2. JavaScript library</button>
-        <button>3. Script Library </button>
-        <button>4. Library </button>
-    </section>
-  <script src="./script.js"></script>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awsome Quiz Application</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="time_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que _text">
+                <span> What does HTML stands for?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+
+                <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Multiple Language </span>
+                </div>
+                <div class="option">
+                    <span>Hyper Tool Multi Language</span>
+                </div>
+            </div>
+        </section>
+        <!-- Quiz Box Footer -->
+        <footer>
+            <div class="total_que">
+                <span>
+                    <p>2</p>of<p>5</p>Questions</p>
+                </span>
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the QUiz!</div>
+            <div class="score_text">
+                <span>and sorry, You got only <p>2</p> out of<p> 5</p></span>
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+
+        </div>
+<script src="script.js"></script>
 </body>
+
 </html>
